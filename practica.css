@@ -1,0 +1,104 @@
+body {
+    font-family: 'segoe UI', tahoma, geneva, verdana, serif;
+    background-color: antiquewhite;
+    color: #333;
+    margin: 0;/*margen de la pagina*/
+    padding: 0;
+}
+
+header {
+    background-color: RebeccaPurple;
+    color: white
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+nav a{
+    color: White;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: goldenrod;
+}
+
+main {
+    max-weight: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+section {
+    background-color: white;
+    margin-botton: 20px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+article {
+    border-left: 4px solid #333;
+    padding-left: 15px;
+    margin-button: 20px;
+}
+
+aside {
+    background-color: aquamarine;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 0.9em;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solido grey;
+}
+
+th {
+    background-color: Grey;
+    color: White;
+}
+
+footer {
+    background-color: aquamarine;
+    color: White;
+    text-align: center;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+.resaltado {
+    color: yellow;
+}
+
+.boton {
+    background-color: rebeccapurple;
+    color: white;
+    padding: 10px 20px;
+    text-decorations: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.boton:hover {
+    background-color: palevioletred;
+}
+
+#mensaje-importante {
+    text-align: center;
+    font-size: 1.5em;
+}
