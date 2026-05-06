@@ -1,0 +1,150 @@
+<table border="1">
+  <tr>
+    <th>Día</th>
+    <th>Desayuno</th>
+    <th>Almuerzo</th>
+    <th>Cena</th>
+  </tr>
+  <tr>
+    <th>Lunes</th>
+    <td>Avena y fruta</td>
+    <td>Pollo con arroz</td>
+    <td>Ensalada</td>
+  </tr>
+  <tr>
+    <th>Martes</th>
+    <td>Huevos y pan</td>
+    <td>Carne con papas</td>
+    <td>Sopa</td>
+  </tr>
+  <tr>
+    <th>Miércoles</th>
+    <td>Yogur y cereal</td>
+    <td>Pasta</td>
+    <td>Sandwich</td>
+  </tr>
+  <tr>
+    <th>Jueves</th>
+    <td>Batido</td>
+    <td>Pescado con arroz</td>
+    <td>Ensalada</td>
+  </tr>
+  <tr>
+    <th>Viernes</th>
+    <td>Pan y café</td>
+    <td>Hamburguesa</td>
+    <td>Pizza</td>
+  </tr>
+  <tr>
+    <th>Sábado</th>
+    <td>Arepa con queso</td>
+    <td>Pollo asado</td>
+    <td>Ensalada</td>
+  </tr>
+  <tr>
+    <th>Domingo</th>
+    <td>Chocolate y pan</td>
+    <td>Sancocho</td>
+    <td>Ligero</td>
+  </tr>
+</table>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi página</title>
+</head>
+<body>
+
+  <header>
+    <h1>Título Principal</h1>
+  </header>
+
+  <main>
+    <p>Este es el primer párrafo de contenido.</p>
+    <p>Este es el segundo párrafo de contenido.</p>
+    <p>Este es el tercer párrafo de contenido.</p>
+  </main>
+
+  <aside>
+    <p>Anuncio secundario 1</p>
+    <p>Anuncio secundario 2</p>
+  </aside>
+
+  <footer>
+    <p>© 2020</p>
+  </footer>
+
+</body>
+</html>
+
+<aside class="links">
+  <p>Texto normal</p>
+  <a href="#">Enlace</a>
+</aside>
+
+Respuesta:
+
+Quedará en rojo:
+
+El texto del <p>
+El texto del <a> (enlace)
+
+Esto pasa porque la propiedad color se hereda a los elementos hijos.
+
+Importante:
+El enlace <a> normalmente tiene estilos por defecto (azul), pero si no hay otra regla más específica, heredará el rojo.
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi página</title>
+
+  <style>
+    body {
+      font-size: 18px;
+      font-family: Tahoma, sans-serif;
+      color: rebeccapurple;
+      background-color: mediumpurple;
+      line-height: 1.5;
+    }
+  </style>
+
+</head>
+<body>
+
+  <header>
+    <h1>Título Principal</h1>
+  </header>
+
+  <main>
+    <p>Este es el primer párrafo de contenido.</p>
+    <p>Este es el segundo párrafo de contenido.</p>
+    <p>Este es el tercer párrafo de contenido.</p>
+  </main>
+
+  <aside>
+    <p>Anuncio secundario 1</p>
+    <p>Anuncio secundario 2</p>
+  </aside>
+
+  <footer>
+    <p>© 2020</p>
+  </footer>
+
+</body>
+</html>
+
+Porque muchas propiedades CSS se heredan automáticamente desde body hacia todos los elementos hijos:
+
+font-size 
+font-family 
+color 
+line-height 
+
+Mientras que:
+
+background-color no se hereda, pero al aplicarlo al body cubre visualmente toda la página.
+
